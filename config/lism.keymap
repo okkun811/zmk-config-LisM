@@ -114,7 +114,7 @@
                                     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT                                       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT
             >;
 
-            sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
         };
 
         layer_1 {
