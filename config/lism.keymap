@@ -122,7 +122,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
-&kp Z   &kp X   &kp C   &kp V   &trans                    &trans  &mkp MB4   &mkp MB5   &trans     &trans
+&kp Z   &kp X   &kp C   &kp V   &trans                    &trans  &mkp MB4   &mkp MB5   &none      &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans     &trans     &trans
                 &trans  &trans  &trans                    &trans  &trans     &trans
             >;
