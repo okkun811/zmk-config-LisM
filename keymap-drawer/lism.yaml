@@ -58,30 +58,28 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '['
+  - ':'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - {t: ▽, type: trans}
+  - _
+  - '-'
+  - +
+  - '}'
+  - '|'
   - Z
   - X
   - C
   - V
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp MB4'
-  - '&mkp MB5'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '*'
+  - (
+  - AT
+  - ']'
+  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -92,6 +90,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - (
+  - Sft+0x87
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -148,7 +148,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   Mark Layer:
-  - Sft+Gui+ASTRK
+  - _
   - '7'
   - '8'
   - '9'
@@ -162,13 +162,13 @@ layers:
   - '4'
   - '5'
   - '6'
-  - ''
+  - '"'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:arrow-up-bold$$
   - {t: ▽, type: trans}
   - {type: held}
-  - +
+  - ':'
   - '1'
   - '2'
   - '3'
