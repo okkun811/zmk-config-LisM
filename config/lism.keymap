@@ -85,6 +85,19 @@
             #sensor-binding-cells = <2>;
             bindings = <&kp>, <&kp>;
         };
+
+        //コロンセミコロン
+
+        jis_SEMI: jis_SEMI {
+            compatible = "zmk,behavior-mod-morph";
+            label = "jis_SEMI";
+            #binding-cells = <0>;
+            bindings = <&kp SEMI>, <&kp SQT>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+
+            //keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -108,7 +121,7 @@
             display-name = "Default Layer";
             bindings = <
 &kp Q                 &kp W         &kp E           &kp R           &kp T                                                 &kp Y           &kp U           &kp I            &kp O            &kp P
-&kp A                 &kp S         &kp D           &kp F           &kp G                                                 &kp H           &kp J           &kp K            &kp L            &lt 3 SEMICOLON
+&kp A                 &kp S         &kp D           &kp F           &kp G                                                 &kp H           &kp J           &kp K            &kp L            &kp jis_SEMI
 &kp Z                 &kp X         &kp C           &kp V           &kp B                                                 &kp N           &kp M           &kp COMMA        &kp DOT          &lt 5 INT_YEN
 &mt LEFT_CONTROL ESC  &kp LEFT_WIN  &kp LEFT_ALT    &msc SCRL_UP    &mt LEFT_SHIFT SPACE  &lt 3 GRAVE    &lt 2 BACKSPACE  &lt 4 ENTER     &msc SCRL_UP    &none            &lt 4 BACKSLASH  &kp SLASH
                                     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT                                       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT
