@@ -123,8 +123,8 @@
 &kp Q                 &kp W         &kp E           &kp R           &kp T                                                 &kp Y           &kp U           &kp I            &kp O            &kp P
 &kp A                 &kp S         &kp D           &kp F           &kp G                                                 &kp H           &kp J           &kp K            &kp L            &jis_SEMI
 &kp Z                 &kp X         &kp C           &kp V           &kp B                                                 &kp N           &kp M           &kp COMMA        &kp DOT          &lt 5 INT_YEN
-&mt LEFT_CONTROL ESC  &kp LEFT_WIN  &kp LEFT_ALT    &msc SCRL_UP    &mt LEFT_SHIFT SPACE  &lt 3 GRAVE    &lt 2 BACKSPACE  &lt 4 ENTER     &msc SCRL_UP    &none            &lt 4 BACKSLASH  &kp SLASH
-                                    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT                                       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT
+&mt LEFT_CONTROL ESC  &kp LEFT_WIN  &kp LEFT_ALT    &kp UP_ARROW    &mt LEFT_SHIFT SPACE  &lt 3 GRAVE    &lt 2 BACKSPACE  &lt 4 ENTER     &msc SCRL_UP    &none            &lt 4 BACKSLASH  &kp SLASH
+                                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW                                       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT
             >;
 
             sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
@@ -133,11 +133,11 @@
         layer_1 {
             display-name = "Mouse Layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
-&kp Z   &kp X   &kp C   &kp V   &trans                    &trans  &mkp MB4   &mkp MB5   &none      &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans     &trans     &trans
-                &trans  &trans  &trans                    &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans                   &trans  &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans                   &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
+&kp Z   &kp X   &kp C   &kp V   &trans                   &trans  &mkp MB4   &mkp MB5   &none      &trans
+&trans  &trans  &trans  &trans  &trans  &none    &trans  &trans  &trans     &trans     &trans     &trans
+                &trans  &trans  &trans                   &trans  &trans     &trans
             >;
 
             sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
@@ -146,11 +146,11 @@
         layer_2 {
             display-name = "Number Layer";
             bindings = <
-&kp F1   &kp F2   &kp F3    &kp F4        &kp F5                       &trans         &trans         &trans         &kp JP_AT             &kp JP_PLUS
-&kp F6   &kp F7   &kp F8    &kp F9        &kp F10                      &kp JP_EQUAL   &kp MINUS      &kp JP_TILDE   &kp JP_LBRACE         &kp JP_RBRACE
-&kp F11  &kp F12  &trans    &trans        &trans                       &kp JP_LPAREN  &kp JP_RPAREN  &kp JP_DQUOTE  &kp JP_LBRACKET       &kp JP_RBRACKET
-&trans   &trans   &trans    &kp UP_ARROW  &trans     &trans    &trans  &trans         &trans         &trans         &kp LEFT_PARENTHESIS  &kp JP_UNDERSCORE
-                  &kp LEFT  &kp DOWN      &kp RIGHT                    &kp LEFT       &kp DOWN       &kp RIGHT
+&kp F1   &kp F2   &kp F3          &kp F4          &kp F5                             &trans         &trans         &trans         &kp JP_AT             &kp JP_PLUS
+&kp F6   &kp F7   &kp F8          &kp F9          &kp F10                            &kp JP_EQUAL   &kp MINUS      &kp JP_TILDE   &kp JP_LBRACE         &kp JP_RBRACE
+&kp F11  &kp F12  &trans          &trans          &trans                             &kp JP_LPAREN  &kp JP_RPAREN  &kp JP_DQUOTE  &kp JP_LBRACKET       &kp JP_RBRACKET
+&trans   &trans   &trans          &msc SCRL_UP    &trans           &trans    &trans  &trans         &trans         &trans         &kp LEFT_PARENTHESIS  &kp JP_UNDERSCORE
+                  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT                    &kp LEFT       &kp DOWN       &kp RIGHT
             >;
 
             sensor-bindings = <&encoder_msc SCRL_RIGHT SCRL_LEFT>;
