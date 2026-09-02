@@ -20,7 +20,7 @@ layers:
   - J
   - K
   - L
-  - {t: ;, h: Mark Layer}
+  - {t: SEMI, s: SQT}
   - Z
   - X
   - C
@@ -30,11 +30,11 @@ layers:
   - M
   - ','
   - .
-  - INT YEN
+  - {t: INT YEN, h: Default Layer}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
   - LEFT WIN
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:pan-up$$
+  - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '`', h: Mark Layer}
   - {t: '$$mdi:backspace$$', h: Number Layer}
@@ -43,9 +43,9 @@ layers:
   - ''
   - {t: \, h: Device Layer}
   - /
-  - $$mdi:pan-left$$
-  - $$mdi:pan-down$$
-  - $$mdi:pan-right$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - $$mdi:pan-left$$
   - $$mdi:pan-down$$
   - $$mdi:pan-right$$
@@ -132,7 +132,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:arrow-up-bold$$
+  - $$mdi:pan-up$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -141,9 +141,9 @@ layers:
   - {t: ▽, type: trans}
   - (
   - Sft+0x87
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
+  - $$mdi:pan-left$$
+  - $$mdi:pan-down$$
+  - $$mdi:pan-right$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -164,26 +164,26 @@ layers:
   - '6'
   - '"'
   - {t: ▽, type: trans}
+  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:mouse-right-click-outline$$
   - {t: ▽, type: trans}
-  - $$mdi:arrow-up-bold$$
-  - {t: ▽, type: trans}
-  - {type: held}
   - ':'
   - '1'
   - '2'
   - '3'
   - /
   - {t: ▽, type: trans}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-shift$$
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - GLOBE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -246,7 +246,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [36, 37]
+- p: [41, 40]
   k: $$mdi:backspace-reverse-outline$$
 - p: [11, 12]
   k: $$mdi:keyboard-tab$$
+- p: [37, 36]
+  k: {t: '$$mdi:backspace$$', type: backspace}
